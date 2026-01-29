@@ -6,7 +6,7 @@ import AuthProvider from "@/components/AuthProvider";
 
 
 export const metadata = {
-  title: "Property Hive",
+  title: "Transient Management System",
   keywords: "Rental Property, Real Estate",
   description: "Find The Perfect Rental Propery",
 };
