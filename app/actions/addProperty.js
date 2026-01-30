@@ -4,6 +4,7 @@ import Property from '@/models/Property';
 import { getSessionUser } from '@/utils/getSessionUser';
 import { revalidatePath } from 'next/cache';
 import { redirect } from 'next/navigation';
+import cloudinary from '@/config/cloudinary';
 
 async function addProperty(formData) {
   await connectDB();
@@ -50,24 +51,24 @@ async function addProperty(formData) {
 
   const imageUrls = [];
 
-  // for (const imageFile of images) {
-  //   const imageBuffer = await imageFile.arrayBuffer();
-  //   const imageArray = Array.from(new Uint8Array(imageBuffer));
-  //   const imageData = Buffer.from(imageArray);
+  for (const imageFile of images) {
+    const imageBuffer = await imageFile.arrayBuffer();
+    const imageArray = Array.from(new Uint8Array(imageBuffer));
+    const imageData = Buffer.from(imageArray);
 
-  //   // Convert the image data to base64
-  //   const imageBase64 = imageData.toString('base64');
+    // Convert the image data to base64
+    const imageBase64 = imageData.toString('base64');
 
-  //   // Make request to upload to Cloudinary
-  //   const result = await cloudinary.uploader.upload(
-  //     `data:image/png;base64,${imageBase64}`,
-  //     {
-  //       folder: 'propertypulse',
-  //     }
-  //   );
+    // Make request to upload to Cloudinary
+    const result = await cloudinary.uploader.upload(
+      `data:image/png;base64,${imageBase64}`,
+      {
+        folder: 'stayVista',
+      }
+    );
 
-  //   imageUrls.push(result.secure_url);
-  // }
+    imageUrls.push(result.secure_url);
+  }
 
   propertyData.images = imageUrls;
 

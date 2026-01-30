@@ -34,8 +34,8 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className='bg-blue-700 border-b border-blue-500'>
-      <div className='mx-auto max-w-7xl px-2 sm:px-6 lg:px-8'>
+    <nav className="bg-[#1A1E43]/80 ">
+      <div className='mx-auto max-w-[1620px] px-2 sm:px-6 lg:px-[5%]'>
         <div className='relative flex h-20 items-center justify-between'>
           <div className='absolute inset-y-0 left-0 flex items-center md:hidden'>
             {/* <!-- Mobile menu button--> */}
@@ -72,7 +72,7 @@ const Navbar = () => {
               <Image className='h-10 w-auto' src={logo} alt='PropertyPulse' />
 
               <span className='hidden md:block text-white text-2xl font-bold ml-2'>
-                Transient Hub
+                StayVista
               </span>
             </Link>
             {/* <!-- Desktop Menu Hidden below md screens --> */}
@@ -80,26 +80,23 @@ const Navbar = () => {
               <div className='flex space-x-2'>
                 <Link
                   href='/'
-                  className={`${
-                    pathname === '/' ? 'bg-black' : ''
-                  } text-white hover:bg-gray-900 hover:text-white rounded-md px-3 py-2`}
+                  className={`${pathname === '/' ? 'bg-black' : ''
+                    } text-white hover:bg-gray-900 hover:text-white rounded-md px-3 py-2`}
                 >
                   Home
                 </Link>
                 <Link
                   href='/properties'
-                  className={`${
-                    pathname === '/properties' ? 'bg-black' : ''
-                  } text-white hover:bg-gray-900 hover:text-white rounded-md px-3 py-2`}
+                  className={`${pathname === '/properties' ? 'bg-black' : ''
+                    } text-white hover:bg-gray-900 hover:text-white rounded-md px-3 py-2`}
                 >
                   Properties
                 </Link>
                 {session && (
                   <Link
                     href='/properties/add'
-                    className={`${
-                      pathname === '/properties/add' ? 'bg-black' : ''
-                    } text-white hover:bg-gray-900 hover:text-white rounded-md px-3 py-2`}
+                    className={`${pathname === '/properties/add' ? 'bg-black' : ''
+                      } text-white hover:bg-gray-900 hover:text-white rounded-md px-3 py-2`}
                   >
                     Add Property
                   </Link>
@@ -235,26 +232,23 @@ const Navbar = () => {
           <div className='space-y-1 px-2 pb-3 pt-2'>
             <Link
               href='/'
-              className={`${
-                pathname === '/' ? 'bg-black' : ''
-              } text-white block rounded-md px-3 py-2 text-base font-medium`}
+              className={`${pathname === '/' ? 'bg-black' : ''
+                } text-white block rounded-md px-3 py-2 text-base font-medium`}
             >
               Home
             </Link>
             <Link
               href='/properties'
-              className={`${
-                pathname === '/properties' ? 'bg-black' : ''
-              } text-white block rounded-md px-3 py-2 text-base font-medium`}
+              className={`${pathname === '/properties' ? 'bg-black' : ''
+                } text-white block rounded-md px-3 py-2 text-base font-medium`}
             >
               Properties
             </Link>
             {session && (
               <Link
                 href='/properties/add'
-                className={`${
-                  pathname === '/properties/add' ? 'bg-black' : ''
-                } text-white block rounded-md px-3 py-2 text-base font-medium`}
+                className={`${pathname === '/properties/add' ? 'bg-black' : ''
+                  } text-white block rounded-md px-3 py-2 text-base font-medium`}
               >
                 Add Property
               </Link>

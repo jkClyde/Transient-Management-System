@@ -8,7 +8,7 @@ const Home = () => {
   connectDB();
   return (
     <>
-      <Hero/>
+      {/* <Hero/> */}
       <InfoBoxes/>
       <HomeProperties/>
     </>
