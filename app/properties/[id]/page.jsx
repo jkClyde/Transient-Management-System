@@ -22,10 +22,10 @@ const PropertyPage = async ({ params }) => {
     <>
       <PropertyHeaderImage image={property.images[0]} />
       <section>
-        <div className='container m-auto py-6 px-6'>
+        <div className='container m-auto py-6 px-6 '>
           <Link
             href='/properties'
-            className='text-blue-500 hover:text-blue-600 flex items-center'
+            className='text-[#23274A] hover:text-blue-600 flex items-center'
           >
             <FaArrowLeft className='mr-2' /> Back to Properties
           </Link>
