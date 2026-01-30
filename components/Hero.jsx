@@ -2,7 +2,7 @@
 
 const Hero = () => {
   return (
-    <section className='flex justify-center items-center mb-4 lg:min-h-[500px] py-[25px] '>
+    <section className='flex justify-center items-center  lg:min-h-[500px] py-[25px] '>
       <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center'>
         <div className='text-center'>
           <h1 className='text-4xl font-extrabold text-white sm:text-5xl md:text-6xl'>
