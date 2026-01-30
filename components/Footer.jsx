@@ -23,7 +23,7 @@ const Footer = () => {
         </div>
         <div>
           <p className='text-sm text-gray-500 mt-2 md:mt-0'>
-            &copy; {currentYear} Property Hive. All rights reserved.
+            &copy; {currentYear} StayVista. All rights reserved.
           </p>
         </div>
       </div>
