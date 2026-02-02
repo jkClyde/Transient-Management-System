@@ -1,7 +1,12 @@
-import Hero  from "../components/Hero"
+import Hero from "../components/Hero"
 import InfoBoxes from "../components/InfoBoxes"
 import HomeProperties from "../components/HomeProperties"
 import connectDB from "@/config/database"
+import gsap from "gsap";
+import { ScrollTrigger, SplitText } from "gsap/all";
+
+gsap.registerPlugin(SplitText, ScrollTrigger);
+
 
 
 const Home = () => {
@@ -9,8 +14,8 @@ const Home = () => {
   return (
     <>
       {/* <Hero/> */}
-      <InfoBoxes/>
-      <HomeProperties/>
+      <InfoBoxes />
+      <HomeProperties />
     </>
   )
 }
