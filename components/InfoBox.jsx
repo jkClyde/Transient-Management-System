@@ -7,7 +7,7 @@ const InfoBox = ({
 }) => {
   return (
     <div className={`${backgroundColor} p-6 rounded-lg shadow-md`}>
-      <h2 className={`${textColor} text-2xl font-bold`}>{heading}</h2>
+      <h2 className={`${textColor} text-xl md:text-2xl font-bold`}>{heading}</h2>
       <p className={`${textColor} mt-2 mb-4`}>{children}</p>
       <a
         href={buttonInfo.link}

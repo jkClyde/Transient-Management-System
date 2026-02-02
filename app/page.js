@@ -14,8 +14,10 @@ const Home = () => {
   return (
     <>
       {/* <Hero/> */}
-      <InfoBoxes />
-      <HomeProperties />
+      <div className="py-[0px] md:py-[50px]">
+        <InfoBoxes />
+        <HomeProperties />
+      </div>
     </>
   )
 }

@@ -9,13 +9,13 @@ const InfoBoxes = () => {
           {/* Renter Box - Light Background */}
           <InfoBox
             heading='For Renters'
-            backgroundColor='bg-[#F5F6FA]'       // Light background
-            textColor='text-[#23284C]'           // Dark text
+            backgroundColor='bg-[#F5F6FA]'
+            textColor='text-[#23284C]'
             buttonInfo={{
               text: 'Browse Properties',
               link: '/properties',
-              backgroundColor: 'bg-[#23284C]',   // Dark button
-              textColor: 'text-[#FFFFFF]',       // White text
+              backgroundColor: 'bg-[#23284C]',
+              textColor: 'text-[#FFFFFF]',
             }}
           >
             Find your dream rental property. Bookmark properties and contact
@@ -25,13 +25,13 @@ const InfoBoxes = () => {
           {/* Property Owner Box - Dark Background */}
           <InfoBox
             heading='For Property Owners'
-            backgroundColor='bg-[#23284C]'       // Dark background
-            textColor='text-[#FFFFFF]'           // White text
+            backgroundColor='bg-[#F5F6FA]'
+            textColor='text-[#23284C]'
             buttonInfo={{
               text: 'Add Property',
               link: '/properties/add',
-              backgroundColor: 'bg-[#FFFFFF]',   // Light button
-              textColor: 'text-[#23284C]',       // Dark text
+              backgroundColor: 'bg-[#23284C]',
+              textColor: 'text-[#FFFFFF]',
             }}
           >
             List your properties and reach potential tenants. Rent as an Airbnb
