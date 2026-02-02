@@ -90,15 +90,24 @@ const Navbar = () => {
                   className={`${pathname === '/properties' ? 'bg-black' : ''
                     } text-white hover:bg-gray-900 hover:text-white rounded-md px-3 py-2`}
                 >
-                  Properties
+                  Listings
                 </Link>
-                {session && (
+                {/* {session && (
                   <Link
                     href='/properties/add'
                     className={`${pathname === '/properties/add' ? 'bg-black' : ''
                       } text-white hover:bg-gray-900 hover:text-white rounded-md px-3 py-2`}
                   >
                     Add Property
+                  </Link>
+                )} */}
+                 {session && (
+                  <Link
+                    href='/bookings'
+                    className={`${pathname === '/properties/add' ? 'bg-black' : ''
+                      } text-white hover:bg-gray-900 hover:text-white rounded-md px-3 py-2`}
+                  >
+                    Bookings
                   </Link>
                 )}
               </div>

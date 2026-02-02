@@ -12,7 +12,7 @@ const InfoBoxes = () => {
             backgroundColor='bg-[#F5F6FA]'
             textColor='text-[#23284C]'
             buttonInfo={{
-              text: 'Browse Properties',
+              text: 'Browse Listings',
               link: '/properties',
               backgroundColor: 'bg-[#23284C]',
               textColor: 'text-[#FFFFFF]',
